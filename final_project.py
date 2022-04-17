@@ -9,8 +9,10 @@ import pandas as pd
 import dash
 from dash.dependencies import Input, Output, State
 
+path ='https://raw.github.com/ricardosequeira1/Data-Visualization-Project/tree/main/data'
+
 # Data
-data = pd.read_csv('database.csv')
+data = pd.read_csv(path + 'database.csv')
 
 strikes = [data[['Radome Strike',
                  'Windshield Strike',
